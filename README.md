@@ -1,21 +1,22 @@
 <!-- # flexy-bootstrap-lite-- >
 <!-- Heading of Template -->
 <h1>
-  <a href="https://www.wrappixel.com/templates/flexy-admin-lite/">Flexy Bootstrap Admin Lite</a>
+  <a href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/">Flexy Next Js Free Admin</a>
 </h1>
 
 <!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/2021/05/flexy-free.jpg">
-  <img src="https://www.wrappixel.com/wp-content/uploads/2021/05/flexy-free.jpg" />
+<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/flexy-nextjs-free.jpg">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/flexy-nextjs-free.jpg" />
 </a>
 
 <!-- Description of Template -->
 <p>
- To enhance user experience and improve the aesthetic design, Flexy Bootstrap Admin Lite is a perfect choice. When you download this beautiful template it provides customization and various configuration options. To give a stylish touch to your project this <a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">bootstrap 5 template admin panel</a> available for free does it all at your fingertips.
+ Flexy Free Nextjs version is built with Most Popular Framework React Material-UI.
+
+The free version comes with elegant grid design that helps you play around with the look and feel of the web app the way you want. it's carefully hand crafted minimal admin template, Its build with modular and modern design.
+
+People love this react dashboard as it is well-known for creating a seamless experience for users with modern design helping to execute complex requirements. It readily offers UI elements, creative pages, and user-friendliness environment.
 </p>
-<p>
-  It allows building high-performing web-applications and other projects in a couple of days giving a seamless experience. You also get a variety of widgets, elements, page templates, icons and much more when you download it. The best part of this free admin theme bootstrap 5 is its full responsiveness and savior when you are low on budget. For all commercial projects, you can opt-in pro version of this template.
- </p>
 
 <!-- <h4><a href="https://wrappixel.com/demos/free-admin-templates/xtreme-admin-lite/xtreme-html/ltr/index.html">Free Version Demo Link</a></h4> -->
 
@@ -31,6 +32,8 @@
 <tr>
 <th>Bootstrap</th>
 <th>React</th>
+<th>Angular</th>
+<th>NextJs</th>
 </tr>
 </thead>
 <tbody>
@@ -45,6 +48,16 @@
     <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/07/flexy-react-admin.jpg" alt="Flexy Template  React" style="max-width:150px;">
   </a>
 </td>
+      <td>
+  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/2022/03/flexy-angular-pro.jpg" alt="Flexy Template  Angular" style="max-width:150px;">
+  </a>
+</td>
+  <td>
+  <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/04/nextjs-flexy.jpg" alt="Flexy Template  NextJs" style="max-width:150px;">
+  </a>
+</td>
 </tr>
 </tbody>
 </table>
@@ -53,11 +66,11 @@
 <h2>Resources</h2>
 <ul>
 <li>  
-  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/bootstrap/flexy-bootstrap-free/landingpage/index.html" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/bootstrap/flexy-bootstrap-free/landingpage/index.html</a>
+  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/nextjs/flexy-nextjs-admin-free-dist/landingpage/" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/nextjs/flexy-nextjs-admin-free-dist/landingpage/</a>
 </li>
 <li>
-    Download Page: <a href="https://www.wrappixel.com/templates/xtreme-admin-lite/" rel="nofollow">
-  https://www.wrappixel.com/templates/flexy-admin-lite/</a>
+    Download Page: <a href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/" rel="nofollow">
+  https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/</a>
 </li>
 <li>
     <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
@@ -68,7 +81,7 @@
 <h2>Licensing</h2>
 <ul>
   <li>
-    <p>Copyright 2021 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+    <p>Copyright 2022 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
   </li>
   <li>
     <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
@@ -78,12 +91,12 @@
 
 <!-- Upgrade to Premium version of Template -->
 <h2>Upgrade to Premium version</h2>
-<a target="_blank" href="https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/05/flexy.jpg" />
+<a target="_blank" href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/04/nextjs-flexy.jpg" />
 </a>
 <p>
-   Checkout our premium version of Xtreme Bootstrap Admin for lots more features and ready to use page templates.<br>
-   <a href="https://demos.wrappixel.com/premium-admin-templates/bootstrap/flexy-bootstrap/package/html/main/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/">Download</a>
+   Checkout our premium version of Flexy NextJs Admin for lots more features and ready to use page templates.<br>
+   <a href="https://flexy-next-js-dashboard.vercel.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/">Download</a>
 </p>
 
 <!-- Useful Links of Template -->
