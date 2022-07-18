@@ -1,11 +1,12 @@
 <!-- # flexy-bootstrap-lite-- >
 <!-- Heading of Template -->
+<h3><a href="https://flexy-mui-nextjs-free.netlify.app/">Live Demo</a></h3>
 <h1>
-  <a href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/">Flexy Next Js Free Admin</a>
+  Flexy Next Js Free Admin
 </h1>
-<h3><a href="https://flexy-mui-nextjs-free.netlify.app/">Live Demo</a>
+
 <!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/flexy-nextjs-free.jpg">
+<a target="_blank" href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/">
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/flexy-nextjs-free.jpg" />
 </a>
 
