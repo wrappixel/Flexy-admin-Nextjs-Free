@@ -21,7 +21,6 @@ const Item = styled(Paper)(({ theme }) => ({
   height: 60,
   lineHeight: '60px',
 }));
-
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 const lightTheme = createTheme({ palette: { mode: 'light' } });
 
@@ -31,55 +30,55 @@ const Buttons = () => {
       <Grid container spacing={3}>
         <Grid item xs={12} lg={6}>
           <BaseCard title="Color Buttons">
-            <Stack spacing={2} direction="row">
-              <Button variant="contained" color="primary">
+          <Box sx={{ "& button": { mr: 1 }}}>
+              <Button variant="contained" color="primary" sx={{marginBottom:'5px'}}>
                 Contained
               </Button>
-              <Button variant="contained" color="error">
+              <Button variant="contained" color="error" sx={{marginBottom:'5px'}}>
                 Contained
               </Button>
-              <Button variant="contained" color="secondary">
+              <Button variant="contained" color="secondary" sx={{marginBottom:'5px'}} >
                 Contained
               </Button>
-              <Button variant="contained" color="success">
+              <Button variant="contained" color="success" sx={{marginBottom:'5px'}}>
                 Contained
               </Button>
               <Button variant="contained" color="warning">
                 Contained
               </Button>
-            </Stack>
+           </Box>
           </BaseCard>
         </Grid>
         <Grid item xs={12} lg={6} >
           <BaseCard title="Text Buttons">
-            <Stack spacing={2} direction="row">
-              <Button variant="text" color="primary">Text</Button>
-              <Button variant="text" color="error">Text</Button>
-              <Button variant="text" color="secondary">Text</Button>
-              <Button variant="text" color="success">Text</Button>
-              <Button variant="text" color="warning">Text</Button>
-            </Stack>
+          <Box sx={{ "& button": { mr: 1 }}}>
+              <Button variant="text" color="primary" sx={{marginBottom:'5px'}}>Text</Button>
+              <Button variant="text" color="error" sx={{marginBottom:'5px'}}>Text</Button>
+              <Button variant="text" color="secondary" sx={{marginBottom:'5px'}}>Text</Button>
+              <Button variant="text" color="success" sx={{marginBottom:'5px'}}>Text</Button>
+              <Button variant="text" color="warning" sx={{marginBottom:'5px'}}>Text</Button>
+            </Box>
           </BaseCard>
         </Grid>
         <Grid item xs={12} lg={6} >
           <BaseCard title="Outline Buttons">
-            <Stack spacing={2} direction="row">
-              <Button variant="outlined" color="primary">
+          <Box sx={{ "& button": { mr: 1 }}}>
+              <Button variant="outlined" color="primary"  sx={{marginBottom:'5px'}}>
                 outlined
               </Button>
-              <Button variant="outlined" color="error">
+              <Button variant="outlined" color="error"  sx={{marginBottom:'5px'}}> 
                 outlined
               </Button>
-              <Button variant="outlined" color="secondary">
+              <Button variant="outlined" color="secondary"  sx={{marginBottom:'5px'}}>
                 outlined
               </Button>
-              <Button variant="outlined" color="success">
+              <Button variant="outlined" color="success"  sx={{marginBottom:'5px'}}>
                 outlined
               </Button>
               <Button variant="outlined" color="warning">
                 outlined
               </Button>
-            </Stack>
+           </Box>
           </BaseCard>
         </Grid>
         <Grid item xs={12} lg={6} >
