@@ -39,7 +39,7 @@ const Upgrade = () => (
 
         <Button
           color="secondary"
-          href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/#demos"
+          href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33"
           fullWidth
           target="_blank"
           disableElevation

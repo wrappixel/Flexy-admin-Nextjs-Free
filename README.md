@@ -22,7 +22,7 @@ Flexy NextJs Admin Dashboard with App Directory
     <a href="https://flexy-admin-nextjs-free.vercel.app/">Live Preview</a>
   </td>
   <td>
-  <a href="https://demos.wrappixel.com/free-admin-templates/nextjs/flexy-nextjs-admin-free-dist/landingpage/">Live Preview</a>
+  <a href="https://flexy-next-js-dashboard.vercel.app/dashboards/dashboard1">Live Preview</a>
   </td>
 </tr>
 <tr>
@@ -30,7 +30,7 @@ Flexy NextJs Admin Dashboard with App Directory
       <a href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/">Download Now</a>
   </td>
   <td>
-    <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/">Purchase Now</a>
+    <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@ Flexy NextJs Admin Dashboard with App Directory
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/04/nextjs-flexy.jpg" alt="">
+<a target="_blank" href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-nextjs-admin-wpn.jpg" alt="">
 </a>
 <p>
   Checkout our premium version of Flexy NextJs Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://demos.wrappixel.com/free-admin-templates/nextjs/flexy-nextjs-admin-free-dist/landingpage/">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/">Download</a>
+  <a href="https://flexy-next-js-dashboard.vercel.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -147,7 +147,7 @@ Flexy NextJs Admin Dashboard with App Directory
 <table>
 <thead>
 <tr>
-<th>Bootstrap</th>
+<th>Next Js</th>
 <th>Angular</th>
 <th>React Js</th>
 <th>Vue Js</th>
@@ -156,23 +156,23 @@ Flexy NextJs Admin Dashboard with App Directory
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/05/flexy.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-nextjs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/2022/03/flexy-angular-pro.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-angular-material-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/07/flexy-react-admin.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-react-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-vuetify-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/03/fley-vue.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-vuetify-vuejs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>
