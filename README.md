@@ -7,7 +7,7 @@ Flexy NextJs Admin Dashboard with App Directory
 </a>
 
 
-# Compare with Premium Version 🌓
+## Compare with Premium Version 🌓
 
 <table>
 <thead>
@@ -132,7 +132,7 @@ Flexy NextJs Admin Dashboard with App Directory
 </tbody>
 </table>
 
-# Upgrade to Premium version
+## Upgrade to Premium Admin Flexy Nextjs Admin Template
 
 <a target="_blank" href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33">
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-nextjs-admin-wpn.jpg" alt="">
@@ -143,7 +143,7 @@ Flexy NextJs Admin Dashboard with App Directory
 </p>
 
 <!-- Versions of Template -->
-# Versions
+## Versions of Flexy Nextjs Admin Template
 <table>
 <thead>
 <tr>
