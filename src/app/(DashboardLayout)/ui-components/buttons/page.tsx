@@ -1,6 +1,6 @@
 'use client';
 import {
-  Paper, Grid,
+  Paper, Grid2 as Grid,
   Button,
   Box,
   Stack,
@@ -26,62 +26,78 @@ const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 const Buttons = () => {
   return (
-    <PageContainer title="button" description="this is button">
+    (<PageContainer title="button" description="this is button">
       <Grid container spacing={3}>
-        <Grid item xs={12} lg={6}>
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Color Buttons">
-          <Box sx={{ "& button": { mr: 1 }}}>
-              <Button variant="contained" color="primary" sx={{marginBottom:'5px'}}>
+            <Box sx={{ "& button": { mr: 1 } }}>
+              <Button variant="contained" color="primary" sx={{ marginBottom: '5px' }}>
                 Contained
               </Button>
-              <Button variant="contained" color="error" sx={{marginBottom:'5px'}}>
+              <Button variant="contained" color="error" sx={{ marginBottom: '5px' }}>
                 Contained
               </Button>
-              <Button variant="contained" color="secondary" sx={{marginBottom:'5px'}} >
+              <Button variant="contained" color="secondary" sx={{ marginBottom: '5px' }} >
                 Contained
               </Button>
-              <Button variant="contained" color="success" sx={{marginBottom:'5px'}}>
+              <Button variant="contained" color="success" sx={{ marginBottom: '5px' }}>
                 Contained
               </Button>
               <Button variant="contained" color="warning">
                 Contained
               </Button>
-           </Box>
-          </BaseCard>
-        </Grid>
-        <Grid item xs={12} lg={6} >
-          <BaseCard title="Text Buttons">
-          <Box sx={{ "& button": { mr: 1 }}}>
-              <Button variant="text" color="primary" sx={{marginBottom:'5px'}}>Text</Button>
-              <Button variant="text" color="error" sx={{marginBottom:'5px'}}>Text</Button>
-              <Button variant="text" color="secondary" sx={{marginBottom:'5px'}}>Text</Button>
-              <Button variant="text" color="success" sx={{marginBottom:'5px'}}>Text</Button>
-              <Button variant="text" color="warning" sx={{marginBottom:'5px'}}>Text</Button>
             </Box>
           </BaseCard>
         </Grid>
-        <Grid item xs={12} lg={6} >
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
+          <BaseCard title="Text Buttons">
+            <Box sx={{ "& button": { mr: 1 } }}>
+              <Button variant="text" color="primary" sx={{ marginBottom: '5px' }}>Text</Button>
+              <Button variant="text" color="error" sx={{ marginBottom: '5px' }}>Text</Button>
+              <Button variant="text" color="secondary" sx={{ marginBottom: '5px' }}>Text</Button>
+              <Button variant="text" color="success" sx={{ marginBottom: '5px' }}>Text</Button>
+              <Button variant="text" color="warning" sx={{ marginBottom: '5px' }}>Text</Button>
+            </Box>
+          </BaseCard>
+        </Grid>
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Outline Buttons">
-          <Box sx={{ "& button": { mr: 1 }}}>
-              <Button variant="outlined" color="primary"  sx={{marginBottom:'5px'}}>
+            <Box sx={{ "& button": { mr: 1 } }}>
+              <Button variant="outlined" color="primary" sx={{ marginBottom: '5px' }}>
                 outlined
               </Button>
-              <Button variant="outlined" color="error"  sx={{marginBottom:'5px'}}> 
+              <Button variant="outlined" color="error" sx={{ marginBottom: '5px' }}>
                 outlined
               </Button>
-              <Button variant="outlined" color="secondary"  sx={{marginBottom:'5px'}}>
+              <Button variant="outlined" color="secondary" sx={{ marginBottom: '5px' }}>
                 outlined
               </Button>
-              <Button variant="outlined" color="success"  sx={{marginBottom:'5px'}}>
+              <Button variant="outlined" color="success" sx={{ marginBottom: '5px' }}>
                 outlined
               </Button>
               <Button variant="outlined" color="warning">
                 outlined
               </Button>
-           </Box>
+            </Box>
           </BaseCard>
         </Grid>
-        <Grid item xs={12} lg={6} >
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Size Buttons">
             <Box sx={{ "& button": { mx: 1 } }}>
               <Button color="primary" size="small" variant="contained">
@@ -96,7 +112,11 @@ const Buttons = () => {
             </Box>
           </BaseCard>
         </Grid>
-        <Grid item xs={12} lg={6} >
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Icon Buttons">
             <Stack spacing={2} direction="row">
               <IconButton aria-label="delete" color="success">
@@ -111,7 +131,11 @@ const Buttons = () => {
             </Stack>
           </BaseCard>
         </Grid>
-        <Grid item xs={12} lg={6}>
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Fab Buttons">
             <Stack spacing={2} direction="row">
               <Fab color="primary" aria-label="add">
@@ -126,7 +150,11 @@ const Buttons = () => {
             </Stack>
           </BaseCard>
         </Grid>
-        <Grid item xs={12} lg={6}>
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Group Buttons">
             <ButtonGroup
               variant="contained"
@@ -138,7 +166,11 @@ const Buttons = () => {
             </ButtonGroup>
           </BaseCard>
         </Grid>
-        <Grid item xs={12} lg={6}>
+        <Grid
+          size={{
+            xs: 12,
+            lg: 6
+          }}>
           <BaseCard title="Group Outline Buttons">
             <ButtonGroup variant="outlined" aria-label="outlined button group">
               <Button>One</Button>
@@ -148,8 +180,7 @@ const Buttons = () => {
           </BaseCard>
         </Grid>
       </Grid>
-
-    </PageContainer>
+    </PageContainer>)
   );
 };
 

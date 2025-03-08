@@ -1,22 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge, Button } from '@mui/material';
 import PropTypes from 'prop-types';
-
+import { DashboardContext } from '@/app/context/DashboardContext';
 // components
 import Profile from './Profile';
-import Search from './Search';
-import {IconMenu2 } from '@tabler/icons-react';
+import Notification from './Notification';
+import { IconMenu2 } from '@tabler/icons-react';
 
-interface ItemType {
-  toggleMobileSidebar:  (event: React.MouseEvent<HTMLElement>) => void;
-}
 
-const Header = ({toggleMobileSidebar}: ItemType) => {
 
-  // const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
-  // const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
+const Header = () => {
 
-  
+
+
+  const { isMobileSidebar, setIsMobileSidebar } = useContext(DashboardContext);
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',
     background: theme.palette.background.paper,
@@ -25,6 +22,7 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
     [theme.breakpoints.up('lg')]: {
       minHeight: '70px',
     },
+    zIndex: 'unset'
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
     width: '100%',
@@ -37,7 +35,7 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
         <IconButton
           color="inherit"
           aria-label="menu"
-          onClick={toggleMobileSidebar}
+          onClick={() => setIsMobileSidebar(!isMobileSidebar)}
           sx={{
             display: {
               lg: "none",
@@ -48,10 +46,15 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
           <IconMenu2 width="20" height="20" />
         </IconButton>
 
-        <Search/>
-         
+        <Notification />
+
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
+
+          <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376">
+            Check Pro Template
+          </Button>
+
           <Profile />
         </Stack>
       </ToolbarStyled>
@@ -64,3 +67,5 @@ Header.propTypes = {
 };
 
 export default Header;
+
+

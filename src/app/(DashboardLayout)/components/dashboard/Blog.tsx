@@ -1,28 +1,26 @@
 import React from "react";
-import { Card, CardContent, Typography, Button, Grid } from "@mui/material";
-import Image from "next/image";
+import { Card, CardContent, Typography, Button, Grid2 as Grid } from "@mui/material";
+import BaseCard from "../shared/BaseCard";
 
-import user1 from "public/images/backgrounds/u2.jpg";
-import user2 from "public/images/backgrounds/u3.jpg";
-import user3 from "public/images/backgrounds/u4.jpg";
+
 
 const blogs = [
   {
-    img: user1,
+    img: '/images/backgrounds/u2.jpg',
     title: "Super awesome, Next 14 is coming soon!",
     subtitle:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
     btncolor: "error.main",
   },
   {
-    img: user2,
+    img: '/images/backgrounds/u3.jpg',
     title: "Super awesome, Next 14 is coming soon!",
     subtitle:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
     btncolor: "warning.main",
   },
   {
-    img: user3,
+    img: '/images/backgrounds/u4.jpg',
     title: "Super awesome, Next 14 is coming soon!",
     subtitle:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -32,28 +30,30 @@ const blogs = [
 
 const BlogCard = () => {
   return (
-    <Grid container spacing={3}>
+
+    <Grid container>
       {blogs.map((blog, index) => (
         <Grid
           key={index}
-          item
-          xs={12}
-          lg={4}
           sx={{
             display: "flex",
             alignItems: "stretch",
           }}
-        >
+          size={{
+            xs: 12,
+            lg: 4
+          }}>
           <Card
             sx={{
               p: 0,
               width: "100%",
             }}
           >
-            <Image
+            <img
               src={blog.img}
               alt="img"
               style={{ width: "100%", height: "250px" }}
+
             />
             <CardContent
               sx={{
@@ -87,6 +87,7 @@ const BlogCard = () => {
         </Grid>
       ))}
     </Grid>
+
   );
 };
 

@@ -1,51 +1,48 @@
-'use client';
+"use client";
 import React from "react";
-import Image from "next/image";
-import { Box, Button, Typography } from "@mui/material";
-import sidebarBuynowsvg from "public/images/backgrounds/sidebar-buynow-bg.svg";
+
+import { Box, Button, Stack, Typography } from "@mui/material";
 
 const Upgrade = () => (
-  <Box pb={0} mt={5}>
+  <Box pb={5} mt={5} px={4}>
     <Box
-      pl={3}
-      pr={3}
-      m={3}
-      textAlign="center"
+      p={2}
       sx={{
-        backgroundColor: (theme) => theme.palette.secondary.light,
+        backgroundColor: (theme) => theme.palette.primary.light,
         borderRadius: "10px",
-        overflow: "hidden",
       }}
+      style={{ position: "relative" }}
     >
-      <Image
-        src={sidebarBuynowsvg}
-        alt={sidebarBuynowsvg}
-        className="buyNowImg"
+      <img
+        src="/images/backgrounds/sidebar-buynow.png"
+        alt="sidebarBuynow"
+        style={{
+          position: "absolute",
+          right: "-10px",
+          top: "-18px",
+        }}
       />
-      <Box pb={3} pt={3}>
-        <Typography variant="h4" fontWeight="700" mb={2}>
-          Get This for Free
+      <Box pb={1} pt={2} sx={{ width: "100%" }}>
+        <Typography
+          variant="h5"
+          mb={2}
+          sx={{
+            color: (theme) => theme.palette.secondary.main,
+            zIndex: "9",
+            position: "relative",
+          }}
+        >
+          Built with <br /> Material-UI
         </Typography>
         <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          target="_blank"
-          href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/"
-          sx={{ marginBottom: "10px" }}
-        >
-          Download Free
-        </Button>
-
-        <Button
           color="secondary"
-          href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33"
+          href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376"
           fullWidth
-          target="_blank"
           disableElevation
+          sx={{ width: "fit-content" }}
           variant="contained"
         >
-          Check Pro
+          Upgrade
         </Button>
       </Box>
     </Box>

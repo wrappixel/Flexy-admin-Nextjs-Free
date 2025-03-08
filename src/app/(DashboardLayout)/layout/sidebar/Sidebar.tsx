@@ -1,22 +1,17 @@
 import { useMediaQuery, Box, Drawer } from "@mui/material";
-import Logo from "../shared/logo/Logo";
 import SidebarItems from "./SidebarItems";
+import { DashboardContext } from "@/app/context/DashboardContext";
+import { useContext } from "react";
 import Upgrade from "./Updrade";
+import Scrollbar from "../../components/custom-scroll/Scrollbar";
 
-interface ItemType {
-  isMobileSidebarOpen: boolean;
-  onSidebarClose: (event: React.MouseEvent<HTMLElement>) => void;
-  isSidebarOpen: boolean;
-}
 
 const Sidebar = ({
-  isMobileSidebarOpen,
-  onSidebarClose,
-  isSidebarOpen,
-}: ItemType) => {
+}) => {
   const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up("lg"));
-
+  const { isMobileSidebar, setIsMobileSidebar } = useContext(DashboardContext);
   const sidebarWidth = "270px";
+
 
   if (lgUp) {
     return (
@@ -31,40 +26,29 @@ const Sidebar = ({
         {/* ------------------------------------------- */}
         <Drawer
           anchor="left"
-          open={isSidebarOpen}
+          open
           variant="permanent"
           PaperProps={{
             sx: {
               width: sidebarWidth,
               boxSizing: "border-box",
-              border: "0",
-              boxShadow: "rgba(113, 122, 131, 0.11) 0px 7px 30px 0px",
+              top: '64px'
             },
           }}
         >
           {/* ------------------------------------------- */}
           {/* Sidebar Box */}
           {/* ------------------------------------------- */}
-          <Box
-            sx={{
-              height: "100%",
-            }}
-            py={2}
-          >
-            {/* ------------------------------------------- */}
-            {/* Logo */}
-            {/* ------------------------------------------- */}
-            <Box px={2}>
-              <Logo />
-            </Box>
-            <Box>
+          <Scrollbar sx={{ height: "calc(100% - 73px)" }}>
+            <Box
+            >
               {/* ------------------------------------------- */}
               {/* Sidebar Items */}
               {/* ------------------------------------------- */}
-              <Box mt={3}><SidebarItems /></Box>
+              <SidebarItems />
               <Upgrade />
             </Box>
-          </Box>
+          </Scrollbar>
         </Drawer>
       </Box>
     );
@@ -73,8 +57,8 @@ const Sidebar = ({
   return (
     <Drawer
       anchor="left"
-      open={isMobileSidebarOpen}
-      onClose={onSidebarClose}
+      open={isMobileSidebar}
+      onClose={() => setIsMobileSidebar(!isMobileSidebar)}
       variant="temporary"
       PaperProps={{
         sx: {
@@ -83,19 +67,17 @@ const Sidebar = ({
         },
       }}
     >
-      {/* ------------------------------------------- */}
-      {/* Logo */}
-      {/* ------------------------------------------- */}
-      <Box px={2} py={2}>
-        <Logo />
-      </Box>
+
       {/* ------------------------------------------- */}
       {/* Sidebar For Mobile */}
       {/* ------------------------------------------- */}
-      <SidebarItems />
+      <Scrollbar sx={{ height: "calc(100% - 73px)" }}>
+        <SidebarItems />
+      </Scrollbar>
       <Upgrade />
     </Drawer>
   );
 };
 
 export default Sidebar;
+

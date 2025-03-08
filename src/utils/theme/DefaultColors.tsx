@@ -2,7 +2,6 @@ import { createTheme } from "@mui/material/styles";
 import { DM_Sans } from "next/font/google";
 import theme from "../theme";
 
-
 export const dm = DM_Sans({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
@@ -14,67 +13,58 @@ const baselightTheme = createTheme({
   direction: "ltr",
   palette: {
     primary: {
-      main: "#03c9d7",
-      light: "#e5fafb",
-      dark: "#05b2bd",
+      main: "#1e4db7",
+      light: "#ddebff",
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#fb9678",
-      light: "#fcf1ed",
-      dark: "#e67e5f",
-      contrastText: "#ffffff",
+      main: "#1a97f5",
+      light: "#edf7ff",
     },
     success: {
-      main: "#00c292",
-      light: "#ebfaf2",
-      dark: "#00964b",
+      main: "#39cb7f",
       contrastText: "#ffffff",
     },
     info: {
       main: "#0bb2fb",
-      light: "#a7e3f4",
+      light: "#dff8ff",
       dark: "#0bb2fb",
       contrastText: "#ffffff",
     },
     error: {
-      main: "#e46a76",
+      main: "#fc4b6c",
       light: "#fdf3f5",
       dark: "#e45a68",
       contrastText: "#ffffff",
     },
     warning: {
-      main: "#fec90f",
-      light: '#fff4e5',
-      dark: "#dcb014",
+      main: "#fdd43f",
       contrastText: "#ffffff",
     },
-    // purple: {
-    //   A50: "#EBF3FE",
-    //   A100: "#6610f2",
-    //   A200: "#557fb9",
-    //   contrastText: "#ffffff",
-    // },
+
     grey: {
-      100: "#F2F6FA",
+      100: "#ecf0f2",
       200: "#EAEFF4",
       300: "#DFE5EF",
       400: "#767e89",
       500: "#5A6A85",
       600: "#2A3547",
     },
+
     text: {
-      primary: "#000",
-      secondary: "rgba(0,0,0,0.87)",
+      primary: "#11142d",
+      secondary: "#777e89",
     },
     action: {
       disabledBackground: "rgba(73,82,88,0.12)",
       hoverOpacity: 0.02,
       hover: "#f6f9fc",
     },
-    divider: "#e5eaef",
+    divider: "#e9e9e9",
+
     background: {
       default: "#fafbfb",
+
       paper: "#fafbfb",
     },
   },
@@ -125,16 +115,16 @@ const baselightTheme = createTheme({
     },
   },
   components: {
-
-  
     MuiCssBaseline: {
       styleOverrides: {
         ".MuiPaper-elevation9, .MuiPopover-root .MuiPaper-elevation": {
-          boxShadow:
-            "0px 7px 30px 0px rgba(90, 114, 123, 0.11) !important",
+          boxShadow: "0px 7px 30px 0px rgba(90, 114, 123, 0.11) !important",
         },
         a: {
           textDecoration: "none",
+        },
+        ".simplebar-scrollbar:before": {
+          background: " #DFE5EF!important",
         },
       },
     },
@@ -148,7 +138,11 @@ const baselightTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          textTransform: "none",
           boxShadow: "none",
+          "&:hover": {
+            boxShadow: "none",
+          },
         },
       },
     },
@@ -156,6 +150,12 @@ const baselightTheme = createTheme({
       styleOverrides: {
         root: {
           boxShadow: "none",
+        },
+
+        sizeSmall: {
+          width: 30,
+          height: 30,
+          minHeight: 30,
         },
       },
     },
@@ -173,11 +173,14 @@ const baselightTheme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: "20px",
-          padding: "0",
-          boxShadow: "0px 7px 30px 0px rgba(90, 114, 123, 0.11)",
+          padding: "14px",
+          margin: "10px",
+          boxShadow: "0px 7px 30px 0px rgba(90, 114, 123, 0.11) !important",
+
         },
       },
     },
+
     MuiCardContent: {
       styleOverrides: {
         root: {
@@ -201,7 +204,6 @@ const baselightTheme = createTheme({
         },
       },
     },
-
 
     MuiAlert: {
       styleOverrides: {
@@ -248,12 +250,10 @@ const baselightTheme = createTheme({
         outlinedInfo: {
           borderColor: theme.palette.info.main,
           color: theme.palette.info.main,
-        }
+        },
       },
     },
-
   },
-  
 });
 
 export { baselightTheme };

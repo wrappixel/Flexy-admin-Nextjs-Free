@@ -1,9 +1,11 @@
 "use client";
 import { styled, Container, Box } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import Header from "@/app/(DashboardLayout)/layout/header/Header";
 import Sidebar from "@/app/(DashboardLayout)/layout/sidebar/Sidebar";
 import Footer from "./layout/footer/page";
+import Topbar from "./layout/header/Topbar";
+import theme from "@/utils/theme";
 
 const MainWrapper = styled("div")(() => ({
   display: "flex",
@@ -16,7 +18,6 @@ const PageWrapper = styled("div")(() => ({
   flexGrow: 1,
   paddingBottom: "60px",
   flexDirection: "column",
-  zIndex: 1,
   backgroundColor: "transparent",
 }));
 
@@ -31,49 +32,64 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
-  const [isMobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+
   return (
     <MainWrapper className="mainwrapper">
-      {/* ------------------------------------------- */}
-      {/* Sidebar */}
-      {/* ------------------------------------------- */}
-      <Sidebar
-        isSidebarOpen={isSidebarOpen}
-        isMobileSidebarOpen={isMobileSidebarOpen}
-        onSidebarClose={() => setMobileSidebarOpen(false)}
-      />
+
       {/* ------------------------------------------- */}
       {/* Main Wrapper */}
       {/* ------------------------------------------- */}
       <PageWrapper className="page-wrapper">
+        <Topbar />
+
         {/* ------------------------------------------- */}
-        {/* Header */}
+        {/* Sidebar */}
         {/* ------------------------------------------- */}
-        <Header toggleMobileSidebar={() => setMobileSidebarOpen(true)} />
+
+        <Sidebar
+
+        />
         {/* ------------------------------------------- */}
         {/* PageContent */}
         {/* ------------------------------------------- */}
-        <Container
+        <Box
           sx={{
-            paddingTop: "20px",
-            maxWidth: "1200px",
+
+            [theme.breakpoints.up("lg")]: {
+              marginLeft: '270px',
+            },
           }}
         >
           {/* ------------------------------------------- */}
-          {/* Page Route */}
+          {/* Header */}
           {/* ------------------------------------------- */}
-          <Box sx={{ minHeight: "calc(100vh - 170px)" }}>{children}</Box>
-          {/* ------------------------------------------- */}
-          {/* End Page */}
-          {/* ------------------------------------------- */}
+          <Header />
+          <Container
+            sx={{
+              paddingTop: "20px",
+              maxWidth: "1200px",
+              minHeight: 'calc(100vh - 229px)'
+            }}
+          >
 
+
+            {/* ------------------------------------------- */}
+            {/* Page Route */}
+            {/* ------------------------------------------- */}
+            <Box>{children}</Box>
+            {/* ------------------------------------------- */}
+            {/* End Page */}
+            {/* ------------------------------------------- */}
+
+
+          </Container>
           {/* ------------------------------------------- */}
           {/* Footer */}
           {/* ------------------------------------------- */}
           <Footer />
-        </Container>
+        </Box>
       </PageWrapper>
     </MainWrapper>
   );
 }
+

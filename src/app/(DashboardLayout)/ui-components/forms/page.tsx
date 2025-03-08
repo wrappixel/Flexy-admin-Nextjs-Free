@@ -1,50 +1,56 @@
 'use client';
 import {
-    Paper,
-    Grid,
-    Stack,
-    TextField,
-    Checkbox,
-    FormGroup,
-    FormControlLabel,
-    RadioGroup,
-    Radio,
-    FormLabel,
-    FormControl,
-    Button,
+  Paper,
+  Grid2 as Grid,
+  Stack,
+  TextField,
+  Checkbox,
+  FormGroup,
+  FormControlLabel,
+  RadioGroup,
+  Radio,
+  FormLabel,
+  FormControl,
+  Button,
 } from '@mui/material'
 import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body1,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    height: 60,
-    lineHeight: '60px',
-  }));
-  
+  ...theme.typography.body1,
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+  height: 60,
+  lineHeight: '60px',
+}));
+
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 const Forms = () => {
-    return (
-      <Grid container spacing={3}>
-        <Grid item xs={12} lg={12}>
-          <BaseCard title="Form Layout">
-            <>
+  return (
+    (<Grid container spacing={3}>
+      <Grid
+        size={{
+          xs: 12,
+          lg: 12
+        }}>
+        <BaseCard title="Form Layout">
+          <>
             <Stack spacing={3}>
               <TextField
                 id="name-basic"
                 label="Name"
                 variant="outlined"
                 defaultValue="Nirav Joshi"
+                size='small'
               />
-              <TextField id="email-basic" label="Email" variant="outlined" />
+              <TextField id="email-basic" label="Email" variant="outlined" size='small' />
               <TextField
                 id="pass-basic"
                 label="Password"
                 type="password"
                 variant="outlined"
+                size='small'
               />
               <TextField
                 id="outlined-multiline-static"
@@ -52,6 +58,7 @@ const Forms = () => {
                 multiline
                 rows={4}
                 defaultValue="Default Value"
+                size='small'
               />
               <TextField
                 error
@@ -59,6 +66,7 @@ const Forms = () => {
                 label="Error"
                 defaultValue="ad1avi"
                 variant="outlined"
+                size='small'
               />
               <FormGroup>
                 <FormControlLabel
@@ -97,32 +105,38 @@ const Forms = () => {
               </FormControl>
             </Stack>
             <br />
-            <Button>
+            <Button color="primary" variant="contained">
               Submit
             </Button>
-            </>
-          </BaseCard>
-        </Grid>
-  
-        <Grid item xs={12} lg={12}>
-          <BaseCard title="Form Design Type">
-            <Stack spacing={3} direction="row">
-              <TextField
-                id="outlined-basic"
-                label="Outlined"
-                variant="outlined"
-              />
-              <TextField id="filled-basic" label="Filled" variant="filled" />
-              <TextField
-                id="standard-basic"
-                label="Standard"
-                variant="standard"
-              />
-            </Stack>
-          </BaseCard>
-        </Grid>
+          </>
+        </BaseCard>
       </Grid>
-    );
-  };
-  
-  export default Forms;
+      <Grid
+        size={{
+          xs: 12,
+          lg: 12
+        }}>
+        <BaseCard title="Form Design Type">
+          <Stack spacing={3} direction="row">
+            <TextField
+              id="outlined-basic"
+              label="Outlined"
+              variant="outlined"
+
+            />
+
+            <TextField id="filled-basic" label="Filled" variant="filled" />
+            <TextField
+              id="standard-basic"
+              label="Standard"
+              variant="standard"
+
+            />
+          </Stack>
+        </BaseCard>
+      </Grid>
+    </Grid>)
+  );
+};
+
+export default Forms;
