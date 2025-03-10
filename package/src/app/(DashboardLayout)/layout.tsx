@@ -9,14 +9,14 @@ import theme from "@/utils/theme";
 
 const MainWrapper = styled("div")(() => ({
   display: "flex",
-  minHeight: "100vh",
+  // minHeight: "100vh",
   width: "100%",
 }));
 
 const PageWrapper = styled("div")(() => ({
   display: "flex",
   flexGrow: 1,
-  paddingBottom: "60px",
+  paddingBottom: "25px",
   flexDirection: "column",
   backgroundColor: "transparent",
 }));
@@ -68,7 +68,7 @@ export default function RootLayout({
             sx={{
               paddingTop: "20px",
               maxWidth: "1200px",
-              minHeight: 'calc(100vh - 229px)'
+              minHeight: 'calc(100vh - 240px)'
             }}
           >
 

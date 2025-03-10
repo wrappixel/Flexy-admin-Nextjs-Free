@@ -23,8 +23,11 @@ const baselightTheme = createTheme({
     },
     success: {
       main: "#39cb7f",
+      light: "#E6FFFA",
       contrastText: "#ffffff",
     },
+
+
     info: {
       main: "#0bb2fb",
       light: "#dff8ff",
