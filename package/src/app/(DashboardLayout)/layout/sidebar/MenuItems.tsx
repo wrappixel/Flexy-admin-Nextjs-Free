@@ -78,7 +78,13 @@ import {
   IconInfoCircle,
   IconTable,
   IconCircleDot,
-  IconLayoutSidebar
+  IconLayoutSidebar,
+  IconTypography,
+  IconCheckbox,
+  IconRadar,
+  IconSlideshow,
+  IconCaretUpDown,
+  IconAperture
 } from "@tabler/icons-react";
 
 const Menuitems: MenuitemsType[] = [
@@ -176,47 +182,73 @@ const Menuitems: MenuitemsType[] = [
     navlabel: true,
     subheader: "UTILITIES",
   },
+
+  {
+    id: uniqueId(),
+    title: 'Autocomplete',
+    icon: IconTypography,
+    href: '/utilities/autocomplete',
+  },
+  {
+    id: uniqueId(),
+    title: 'Checkbox',
+    icon: IconCheckbox,
+    href: '/utilities/checkbox',
+  },
+  {
+    id: uniqueId(),
+    title: 'Radio',
+    icon: IconRadar,
+    href: '/utilities/radio',
+  },
+  {
+    id: uniqueId(),
+    title: 'Slider',
+    icon: IconSlideshow,
+    href: '/utilities/slider',
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Switch',
+    icon: IconCaretUpDown,
+    href: '/utilities/switch',
+  },
   {
     id: uniqueId(),
     title: "Buttons",
     icon: IconCircleDot,
-    href: "/ui-components/buttons",
+    href: "/utilities/buttons",
   },
   {
     id: uniqueId(),
     title: "Forms",
     icon: IconTable,
-    href: "/ui-components/forms",
+    href: "/utilities/forms",
   },
   {
     id: uniqueId(),
     title: "Alerts",
     icon: IconInfoCircle,
-    href: "/ui-components/alerts",
-  },
-  {
-    id: uniqueId(),
-    title: "Ratings",
-    icon: IconStar,
-    href: "/ui-components/ratings",
-  },
-  {
-    id: uniqueId(),
-    title: "Images",
-    icon: IconPhoto,
-    href: "/ui-components/images",
+    href: "/utilities/alerts",
   },
   {
     id: uniqueId(),
     title: "Pagination",
     icon: IconUser,
-    href: "/ui-components/pagination",
+    href: "/utilities/pagination",
   },
   {
     id: uniqueId(),
     title: "Tables",
     icon: IconLayoutGrid,
-    href: "/ui-components/table",
+    href: "/utilities/table",
+  },
+  {
+    id: uniqueId(),
+    title: 'Sample Page',
+    icon: IconAperture,
+    href: '/sample-page',
   },
 
   {

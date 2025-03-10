@@ -15,8 +15,6 @@ import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
 //     lineHeight: '60px',
 //   }));
 
-
-
 const Alerts = () => {
   return (
     (<Grid container spacing={3}>
