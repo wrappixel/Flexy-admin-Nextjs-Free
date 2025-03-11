@@ -16,10 +16,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-import PersonAddOutlinedIcon from '@mui/icons-material/PersonAddOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
-
+import { IconDashboard, IconMail, IconUser } from '@tabler/icons-react';
 
 
 const Profile = () => {
@@ -36,7 +33,8 @@ const Profile = () => {
 
 
   return (
-    <Box>
+    <Box display='flex' gap={1}>
+      <Divider orientation="vertical" variant="middle" flexItem />
       <IconButton
         size="large"
         aria-label="menu"
@@ -54,8 +52,8 @@ const Profile = () => {
           src={"/images/users/1.jpg"}
           alt={"ProfileImg"}
           sx={{
-            width: 30,
-            height: 30,
+            width: 35,
+            height: 35,
           }}
         />
 
@@ -86,40 +84,41 @@ const Profile = () => {
           },
         })}
       >
-        <MenuItem onClick={handleClose2}>
-          <Avatar
-            sx={{
-              width: "35px",
-              height: "35px",
-            }}
-          />
-          <Box
-            sx={{
-              ml: 2,
-            }}
-          >
-            My account
-          </Box>
+        <MenuItem>
+          <Link href='/utilities/forms'>
+            <Box display='flex' alignItems='center'>
+              <ListItemIcon>
+                <IconUser width={20} />
+              </ListItemIcon>
+              <ListItemText><Typography variant='subtitle1' color='textPrimary'>My Profile</Typography></ListItemText>
+            </Box>
+          </Link>
         </MenuItem>
-        <Divider />
-        <MenuItem onClick={handleClose2}>
-          <ListItemIcon>
-            <PersonAddOutlinedIcon fontSize="small" />
-          </ListItemIcon>
-          Add another account
+        <MenuItem>
+          <Link href='/utilities/table'>
+            <Box display='flex' alignItems='center'>
+              <ListItemIcon>
+                <IconMail width={20} />
+              </ListItemIcon>
+              <ListItemText><Typography variant='subtitle1' color='textPrimary'>Performance</Typography></ListItemText>
+            </Box>
+          </Link>
         </MenuItem>
-        <MenuItem onClick={handleClose2}>
-          <ListItemIcon>
-            <SettingsOutlinedIcon fontSize="small" />
-          </ListItemIcon>
-          Settings
+        <MenuItem>
+          <Link href='/'>
+            <Box display='flex' alignItems='center'>
+              <ListItemIcon>
+                <IconDashboard width={20} />
+              </ListItemIcon>
+              <ListItemText><Typography variant='subtitle1' color='textPrimary'>My Dashboard</Typography></ListItemText>
+            </Box>
+          </Link>
         </MenuItem>
-        <MenuItem onClick={handleClose2}>
-          <ListItemIcon>
-            <LogoutOutlinedIcon fontSize="small" />
-          </ListItemIcon>
-          Logout
-        </MenuItem>
+        <Box mt={1} py={1} px={2}>
+          <Button href="/authentication/login" variant="outlined" color="primary" component={Link} fullWidth>
+            Logout
+          </Button>
+        </Box>
       </Menu>
     </Box>
   );

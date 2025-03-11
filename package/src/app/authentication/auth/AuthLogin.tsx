@@ -29,12 +29,12 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
 
         <Stack>
             <Box>
-                <Typography variant="subtitle1"
+                <Typography variant="subtitle2"
                     fontWeight={500} component="label" htmlFor='username' mb="5px">Username</Typography>
                 <CustomTextField id="username" size="small" variant="outlined" fullWidth />
             </Box>
             <Box mt="25px">
-                <Typography variant="subtitle1"
+                <Typography variant="subtitle2"
                     fontWeight={500} component="label" htmlFor='password' mb="5px" >Password</Typography>
                 <CustomTextField id="password" type="password" size="small" variant="outlined" fullWidth />
             </Box>

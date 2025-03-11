@@ -17,7 +17,7 @@ import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
 
 const Alerts = () => {
   return (
-    (<Grid container spacing={3}>
+    (<Grid container>
       <Grid
         size={{
           xs: 12,

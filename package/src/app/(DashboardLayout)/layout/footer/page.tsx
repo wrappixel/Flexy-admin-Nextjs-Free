@@ -8,7 +8,8 @@ const Footer = () => {
       <Typography>
         © {new Date().getFullYear()} All rights reserved by{" "}
         <Link href="https://www.wrappixel.com">
-          Wrappixel.com
+          <Typography color='primary.main' component='span'>
+            Wrappixel.com</Typography>
         </Link>{" "}
       </Typography>
     </Box>

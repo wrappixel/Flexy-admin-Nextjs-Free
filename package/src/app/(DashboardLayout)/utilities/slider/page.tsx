@@ -31,7 +31,7 @@ const ExSlider = () => {
 
     return (
         (<Box>
-            <Grid container spacing={3}>
+            <Grid container>
                 {/* ------------------------- row 1 ------------------------- */}
                 <Grid
                     size={{ xs: 12, lg: 4, sm: 6 }}

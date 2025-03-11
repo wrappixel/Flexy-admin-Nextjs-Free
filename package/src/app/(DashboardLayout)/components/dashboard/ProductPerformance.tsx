@@ -9,6 +9,8 @@ import {
   TableRow,
   Chip,
   TableContainer,
+  Select,
+  MenuItem,
 } from "@mui/material";
 import BaseCard from "../shared/DashboardCard";
 
@@ -52,8 +54,28 @@ const products = [
 ];
 
 const ProductPerfomance = () => {
+
+  // select
+  const [month, setMonth] = React.useState('1');
+
+  const handleChange = (event: any) => {
+    setMonth(event.target.value);
+  };
+
   return (
-    <BaseCard title="Product Perfomance">
+    <BaseCard title="Product Perfomance" action={
+      <Select
+        labelId="month-dd"
+        id="month-dd"
+        value={month}
+        size="small"
+        onChange={handleChange}
+      >
+        <MenuItem value={1}>March 2025</MenuItem>
+        <MenuItem value={2}>April 2025</MenuItem>
+        <MenuItem value={3}>May 2025</MenuItem>
+      </Select>
+    }>
       <TableContainer
         sx={{
           width: {

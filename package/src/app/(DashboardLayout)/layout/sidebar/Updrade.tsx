@@ -4,7 +4,7 @@ import React from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 
 const Upgrade = () => (
-  <Box pb={5} mt={5} px={4}>
+  <Box pb={5} mt={5} px={3}>
     <Box
       p={2}
       sx={{
@@ -27,15 +27,16 @@ const Upgrade = () => (
           variant="h5"
           mb={2}
           sx={{
-            color: (theme) => theme.palette.secondary.main,
             zIndex: "9",
             position: "relative",
           }}
         >
-          Built with <br /> Material-UI
+          Unlimited <br />
+          Access
+
         </Typography>
         <Button
-          color="secondary"
+          color="primary"
           href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376"
           fullWidth
           disableElevation

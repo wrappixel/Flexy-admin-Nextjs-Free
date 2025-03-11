@@ -16,7 +16,7 @@ const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 const Paginations = () => {
   return (
-    (<Grid container spacing={3}>
+    (<Grid container>
       <Grid
         size={{
           xs: 12,

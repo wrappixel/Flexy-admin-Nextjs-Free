@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 import dynamic from "next/dynamic";
 import BaseCard from "../shared/DashboardCard";
+import { Box } from "@mui/material";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const SalesOverview = () => {
@@ -74,22 +75,9 @@ const SalesOverview = () => {
         "Nov",
         "Dec",
       ],
-      labels: {
-        style: {
-          cssClass: "grey--text lighten-2--text fill-color",
-        },
-      },
     },
     yaxis: {
       show: true,
-      min: 100,
-      max: 400,
-      tickAmount: 3,
-      labels: {
-        style: {
-          cssClass: "grey--text lighten-2--text fill-color",
-        },
-      },
     },
     stroke: {
       show: true,
@@ -113,12 +101,14 @@ const SalesOverview = () => {
   ];
   return (
     <BaseCard title="Sales Overview">
-      <Chart
-        options={optionssalesoverview}
-        series={seriessalesoverview}
-        type="bar"
-        height="295px"
-      />
+      <Box className='rounded-bars'>
+        <Chart
+          options={optionssalesoverview}
+          series={seriessalesoverview}
+          type="bar"
+          height="295px"
+        />
+      </Box>
     </BaseCard>
   );
 };

@@ -66,8 +66,8 @@ const StyledLink = styled(Link)(({ theme }) => ({
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-    border: `1px solid ${theme.palette.primary.main}`,
-    color: theme.palette.primary.main,
+    border: `1px solid ${theme.palette.secondary.main}`,
+    color: theme.palette.secondary.main,
     padding: '6px 16px',
     textTransform: 'none',
     display: 'flex',
@@ -75,8 +75,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     '&:hover': {
-        backgroundColor: theme.palette.primary.main,
-        color: theme.palette.primary.contrastText,
+        backgroundColor: theme.palette.secondary.main,
+        color: theme.palette.secondary.contrastText,
     },
     '& .MuiButton-startIcon': {
         marginRight: '4px',
@@ -91,7 +91,6 @@ const MenuItems: MenuItemType[] = [
     { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376' },
     { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=376' },
     { id: 4, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376' },
-    { id: 5, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376' },
     { id: 6, title: 'ReactJs Preview', href: ' https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376' },
     { id: 7, title: 'NuxtJs Preview', href: ' https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376' },
 

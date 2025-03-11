@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material/styles";
 import { DM_Sans } from "next/font/google";
-import theme from "../theme";
 
 export const dm = DM_Sans({
   weight: ["400", "500", "700"],
@@ -13,21 +12,23 @@ const baselightTheme = createTheme({
   direction: "ltr",
   palette: {
     primary: {
-      main: "#1e4db7",
-      light: "#ddebff",
-      contrastText: "#ffffff",
+      main: '#1e4db7',
+      light: '#e7ecf7',
+      dark: '#173f98',
+      contrastText: '#ffffff',
     },
     secondary: {
-      main: "#1a97f5",
-      light: "#edf7ff",
+      main: '#1a97f5',
+      light: '#EFF9FF',
+      dark: '#1682d4',
+      contrastText: '#ffffff',
     },
     success: {
-      main: "#39cb7f",
-      light: "#E6FFFA",
+      main: "#00c292",
+      light: "#ebfaf2",
+      dark: "#00964b",
       contrastText: "#ffffff",
     },
-
-
     info: {
       main: "#0bb2fb",
       light: "#dff8ff",
@@ -41,7 +42,9 @@ const baselightTheme = createTheme({
       contrastText: "#ffffff",
     },
     warning: {
-      main: "#fdd43f",
+      main: "#fdc90f",
+      light: '#fff4e5',
+      dark: "#dcb014",
       contrastText: "#ffffff",
     },
 
@@ -129,6 +132,64 @@ const baselightTheme = createTheme({
         ".simplebar-scrollbar:before": {
           background: " #DFE5EF!important",
         },
+        ".MuiTypography-root, .MuiListSubheader-root, .MuiChip-label": {
+          fontFamily: "'DM Sans', sans-serif !important"
+        },
+        ".rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path":
+        {
+          clipPath: "inset(0 0 5% 0 round 20px)",
+        },
+        ".MuiAlert-root .MuiAlert-icon": {
+          color: "inherit!important",
+        },
+      },
+    },
+    MuiAlert: {
+      styleOverrides: {
+        filledSuccess: {
+          color: "white",
+        },
+        filledInfo: {
+          color: "white",
+        },
+        filledError: {
+          color: "white",
+        },
+        filledWarning: {
+          color: "white",
+        },
+        standardSuccess: ({ theme }: any) => ({
+          backgroundColor: theme.palette.success.light,
+          color: theme.palette.success.main,
+        }),
+        standardError: ({ theme }: any) => ({
+          backgroundColor: theme.palette.error.light,
+          color: theme.palette.error.main,
+        }),
+        standardWarning: ({ theme }: any) => ({
+          backgroundColor: theme.palette.warning.light,
+          color: theme.palette.warning.main,
+        }),
+        standardInfo: ({ theme }: any) => ({
+          backgroundColor: theme.palette.info.light,
+          color: theme.palette.info.main,
+        }),
+        outlinedSuccess: ({ theme }: any) => ({
+          borderColor: theme.palette.success.main,
+          color: theme.palette.success.main,
+        }),
+        outlinedWarning: ({ theme }: any) => ({
+          borderColor: theme.palette.warning.main,
+          color: theme.palette.warning.main,
+        }),
+        outlinedError: ({ theme }: any) => ({
+          borderColor: theme.palette.error.main,
+          color: theme.palette.error.main,
+        }),
+        outlinedInfo: ({ theme }: any) => ({
+          borderColor: theme.palette.info.main,
+          color: theme.palette.info.main,
+        }),
       },
     },
     MuiButtonGroup: {
@@ -143,6 +204,7 @@ const baselightTheme = createTheme({
         root: {
           textTransform: "none",
           boxShadow: "none",
+          borderRadius: "7px",
           "&:hover": {
             boxShadow: "none",
           },
@@ -208,54 +270,29 @@ const baselightTheme = createTheme({
       },
     },
 
-    MuiAlert: {
+    MuiSelect: {
       styleOverrides: {
-        filledSuccess: {
-          color: "white",
-        },
-        filledInfo: {
-          color: "white",
-        },
-        filledError: {
-          color: "white",
-        },
-        filledWarning: {
-          color: "white",
-        },
-        standardSuccess: {
-          backgroundColor: theme.palette.success.light,
-          color: theme.palette.success.main,
-        },
-        standardError: {
-          backgroundColor: theme.palette.error.light,
-          color: theme.palette.error.main,
-        },
-        standardWarning: {
-          backgroundColor: theme.palette.warning.light,
-          color: theme.palette.warning.main,
-        },
-        standardInfo: {
-          backgroundColor: theme.palette.info.light,
-          color: theme.palette.info.main,
-        },
-        outlinedSuccess: {
-          borderColor: theme.palette.success.main,
-          color: theme.palette.success.main,
-        },
-        outlinedWarning: {
-          borderColor: theme.palette.warning.main,
-          color: theme.palette.warning.main,
-        },
-        outlinedError: {
-          borderColor: theme.palette.error.main,
-          color: theme.palette.error.main,
-        },
-        outlinedInfo: {
-          borderColor: theme.palette.info.main,
-          color: theme.palette.info.main,
+        root: {
+          fontSize: '14px',
+          borderRadius: "7px",
         },
       },
     },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#e5eaef !important',
+          },
+          borderRadius: "7px",
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline, &:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#1e4db7 !important'
+          }
+        },
+      },
+    },
+
+
   },
 });
 
