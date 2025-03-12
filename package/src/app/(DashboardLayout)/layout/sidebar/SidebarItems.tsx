@@ -1,6 +1,6 @@
 import React from "react";
 import { usePathname } from "next/navigation";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import {
   Logo,
   Sidebar as MUI_Sidebar,
@@ -48,7 +48,7 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         key={item.id}
         isSelected={pathDirect === item?.href}
         icon={itemIcon}
-        component={Link}
+        component="div"
         link={item.href && item.href !== "" ? item.href : undefined}
         target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}
         badge={item.chip ? true : false}
@@ -57,7 +57,13 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         badgeTextColor="#1a9bfc"
         disabled={item.disabled}
       >
-        {item.title}
+        <Link href={item.href} passHref legacyBehavior >
+          <a target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer">
+            <Typography component='span' color={pathDirect === item?.href ? '#fff' : 'inherit'}>
+              {item.title}</Typography>
+          </a>
+        </Link>
+        {/* {item.title} */}
       </MenuItem>
     );
   });

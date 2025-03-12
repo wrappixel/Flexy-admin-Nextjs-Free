@@ -39,7 +39,7 @@ const Upgrade = () => (
           color="primary"
           href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376"
           fullWidth
-          disableElevation
+          disableElevation target="_blank"
           sx={{ width: "fit-content" }}
           variant="contained"
         >
