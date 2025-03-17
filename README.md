@@ -8,7 +8,7 @@ Flexy NextJs Admin Dashboard with App Directory
 
 
 ## Compare with Premium Version 🌓
-
+ 
 <table>
 <thead>
 <tr>
