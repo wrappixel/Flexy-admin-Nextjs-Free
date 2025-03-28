@@ -31,19 +31,19 @@ const Upgrade = () => (
             position: "relative",
           }}
         >
-          Unlimited <br />
-          Access
+          Check Pro <br />
+          Version
 
         </Typography>
         <Button
           color="primary"
-          href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376"
+          href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#demos"
           fullWidth
           disableElevation target="_blank"
           sx={{ width: "fit-content" }}
           variant="contained"
         >
-          Upgrade
+          Check
         </Button>
       </Box>
     </Box>
