@@ -69,10 +69,10 @@ const StyledLink = styled(Link)(({ theme }) => ({
 
 
 const MenuItems: MenuItemType[] = [
-    { id: 1, title: 'Buy Bootstrap Version', href: 'https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#package-card' },
+    { id: 1, title: 'Buy NextJs Version', href: 'https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#package-card' },
     { id: 2, title: 'Buy Angular Version', href: 'https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376#package-card' },
     { id: 3, title: 'Buy VueJs Version', href: 'https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=376#package-card' },
-    { id: 4, title: 'Buy NextJs Version', href: 'https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#package-card' },
+    { id: 4, title: 'Buy Bootstrap Version', href: 'https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#package-card' },
     { id: 6, title: 'Buy ReactJs Version', href: ' https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376#package-card' },
     { id: 7, title: 'Buy NuxtJs Version', href: ' https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376#package-card' },
 
