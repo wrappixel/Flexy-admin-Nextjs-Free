@@ -3,7 +3,7 @@ Flexy NextJs Admin Dashboard with App Directory
 
 <!-- Main image of Template -->
 <a target="_blank" href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/flexy-nextjs-free.jpg" />
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2025/03/Flexy_Nextjs_Free_version.jpg" />
 </a>
 
 
