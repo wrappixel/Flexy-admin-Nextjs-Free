@@ -150,13 +150,11 @@ The **Free Version** of the **Flexy NextJs Dashboard** provides a solid set of f
 | **Pre-designed Pages**            | ✅ Basic Pages                         | ✅ Advanced Pages (more layouts & options)           |
 | **Widgets**                       | ✅ Basic Widgets                       | ✅ Advanced Widgets (e.g., weather, charts, maps)    |
 | **Themes**                        | ✅ Default Theme                | ✅ Multiple Themes, Custom Color Skins, and Dark Modes |
-| **Customization**                 | ✅ Limited Customization               | ✅ Full Customization (Complete theme and UI flexibility) |
 | **Support**                       | ✅ Community Support                   | ✅ Priority Support with Direct Contact             |
 | **Additional Components**         | ❌ Limited                             | ✅ Additional Components (Forms, Buttons, More UI Elements) |
 | **Advanced Data Visualization**   | ❌ Basic Charts                        | ✅ Advanced Data Visualizations (graphs, complex charts) |
 | **Multi-Language Support**        | ❌ Not available                       | ✅ Built-in support for multiple languages          |
 | **User Permissions & Roles**      | ❌ No                                  | ✅ User roles and permissions management            |
-| **Customizable Dashboards**       | ❌ Not available                       | ✅ Drag-and-drop customizable dashboards            |
 | **Real-time Notifications**       | ❌ Not available                       | ✅ Real-time notifications for alerts & updates      |
 | **Advanced Analytics & Reporting**| ❌ Basic reports                       | ✅ Advanced analytics with custom reports and filters|
 
