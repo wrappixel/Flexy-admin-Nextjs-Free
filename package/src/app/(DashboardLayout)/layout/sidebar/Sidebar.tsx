@@ -32,7 +32,7 @@ const Sidebar = ({
             sx: {
               width: sidebarWidth,
               boxSizing: "border-box",
-              top: '64px'
+              top: '72px'
             },
           }}
         >

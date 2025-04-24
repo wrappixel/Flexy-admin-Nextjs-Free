@@ -3,14 +3,23 @@ import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { Icon } from "@iconify/react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { IconDeviceLaptop, IconExternalLink } from '@tabler/icons-react';
 import Link from "next/link";
+import { colors } from '@mui/material';
+// import { IconExternalLink } from '@tabler/icons-react';
 
+import img1 from '/public/images/svgs/next-cat-icon.svg';
+import img2 from '/public/images/svgs/next-cat-icon.svg';
+import img3 from '/public/images/svgs/next-cat-icon.svg';
+import img4 from '/public/images/svgs/next-cat-icon.svg';
+import img5 from '/public/images/svgs/next-cat-icon.svg';
+import img6 from '/public/images/svgs/next-cat-icon.svg';
 
 interface MenuItemType {
     id: number;
     title: string;
+    img: string;
     href: string;
 }
 
@@ -29,14 +38,14 @@ const StyledMenu = styled((props: any) => (
     />
 ))(({ theme }) => ({
     '& .MuiPaper-root': {
-        borderRadius: 6,
+        borderRadius: 7,
         marginTop: theme.spacing(1),
-        minWidth: 180,
-        color: 'rgb(55, 65, 81)',
+        minWidth: 200,
+        color: '#000c29',
         boxShadow:
             'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
         '& .MuiMenu-list': {
-            padding: '10px 0',
+            padding: '16px',  
         },
         '& .MuiMenuItem-root': {
             '& .MuiSvgIcon-root': {
@@ -59,40 +68,38 @@ const StyledMenu = styled((props: any) => (
 
 const StyledLink = styled(Link)(({ theme }) => ({
     textDecoration: 'none',
-    color: 'inherit',
+    color: '#000c29',
+    borderRadius: '7px',
     '&:hover': {
-        color: theme.palette.primary.main,
+        backgroundColor: '#000c290d',
     },
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-    border: `1px solid ${theme.palette.secondary.main}`,
-    color: theme.palette.secondary.main,
-    padding: '6px 16px',
+    border: `1px solid rgba(255,255,255,.4)`,
+    fontSize: '16px',
+    color: '#ffffff',
+    padding: '5px 16px',
     textTransform: 'none',
     display: 'flex',
     borderRadius: '7px',
     justifyContent: 'space-between',
     alignItems: 'center',
     '&:hover': {
-        backgroundColor: theme.palette.secondary.main,
-        color: theme.palette.secondary.contrastText,
-    },
-    '& .MuiButton-startIcon': {
-        marginRight: '4px',
+        backgroundColor: '#8d70f8',
     },
     '& .MuiButton-endIcon': {
         marginLeft: '4px',
     },
 }));
 
-const MenuItems: MenuItemType[] = [
-    { id: 1, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#demos' },
-    { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376#demos' },
-    { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=376#demos' },
-    { id: 4, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#demos' },
-    { id: 6, title: 'ReactJs Preview', href: ' https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376#demos' },
-    { id: 7, title: 'NuxtJs Preview', href: ' https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376#demos' },
+const MenuItems: MenuItemType[] = [   
+    { id: 1, img: '/images/svgs/next-cat-icon.svg', title: 'NextJs Version', href: 'https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#demos' },
+    { id: 2, img: '/images/svgs/angular-cat-icon.svg', title: 'Angular Version', href: 'https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376#demos' },
+    { id: 3, img: '/images/svgs/vue-cat-icon.svg', title: 'VueJs Version', href: 'https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=376#demos' },
+    { id: 4, img: '/images/svgs/nuxt-cat-icon.svg', title: 'NuxtJs Version', href: ' https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376#demos' },
+    { id: 5, img: '/images/svgs/react-cat-icon.svg', title: 'ReactJs Version', href: ' https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376#demos' },
+    { id: 6, img: '/images/svgs/bt-cat-icon.svg', title: 'Bootstrap Version', href: 'https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#demos' },
 
 ];
 
@@ -119,7 +126,6 @@ const LivePreviewDropdown: React.FC = () => {
                 disableElevation
                 onClick={handleClick}
                 endIcon={<KeyboardArrowDownIcon />}
-                startIcon={<IconDeviceLaptop size={18} />}
             >
                 Live Preview
             </StyledButton>
@@ -132,9 +138,9 @@ const LivePreviewDropdown: React.FC = () => {
             >
                 {MenuItems.map((item) => (
                     <StyledLink key={item.id} href={item.href} target='blank'>
-                        <MenuItem sx={{ gap: '4px', padding: '8px 16px' }} onClick={handleClose} disableRipple>
-                            <IconExternalLink size={18} />
-                            {item.title}
+                        <MenuItem sx={{ gap: '12px', borderRadius: '7px', padding: '12px 18px', ":hover": { backgroundColor: "#000c290d" } }} onClick={handleClose} disableRipple>
+                            <img src={item.img} width={18} alt="logo" />
+                            {item.title} 
                         </MenuItem>
                     </StyledLink>
                 ))}

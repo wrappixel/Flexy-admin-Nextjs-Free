@@ -57,7 +57,7 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         badgeTextColor="#1a9bfc"
         disabled={item.disabled}
       >
-        <Link href={item.href} passHref legacyBehavior >
+        <Link href={item.href} legacyBehavior>
           <a target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer">
             <Typography component='span' color={pathDirect === item?.href ? '#fff' : 'inherit'}>
               {item.title}</Typography>
