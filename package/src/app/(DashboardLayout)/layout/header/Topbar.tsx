@@ -57,7 +57,7 @@ const Topbar = () => {
           >
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Link
-                href="https://www.wrappixel.com/templates/category/bootstrap-templates/"
+                href="https://www.wrappixel.com/templates/category/nextjs-templates/"
                 style={{ display: "flex", height: "fit-content" }}
                 target="_blank"
               >

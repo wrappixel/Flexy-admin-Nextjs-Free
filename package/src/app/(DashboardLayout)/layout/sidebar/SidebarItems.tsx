@@ -55,7 +55,7 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         badgeContent={item.chip || ""}
         badgeColor="secondary"
         badgeTextColor="#1a9bfc"
-        disabled={item.disabled}
+        disabled={item.disabled} 
       >
         <Link href={item.href} legacyBehavior>
           <a target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer">
