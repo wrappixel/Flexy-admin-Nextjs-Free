@@ -14,7 +14,7 @@ import Link from "next/link";
 
 
 import { IconPoint } from "@tabler/icons-react";
-import Upgrade from "./Updrade";
+
 
 const renderMenuItems = (items: any[], pathDirect: string) => {
   return items.map((item) => {
@@ -35,7 +35,7 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
     //If the item has children (submenu)
     if (item.children) {
       return (
-        <Submenu key={item.id} title={item.title} icon={itemIcon}>
+        <Submenu key={item.id} title={item.title} icon={itemIcon} textFontSize={"16px"}>
           {renderMenuItems(item.children, pathDirect)}
         </Submenu>
       );
@@ -55,16 +55,15 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         badgeContent={item.chip || ""}
         badgeColor="secondary"
         badgeTextColor="#1a9bfc"
-        disabled={item.disabled} 
+        disabled={item.disabled}
+
       >
-        <Link href={item.href} legacyBehavior>
-          <a target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer">
-            <Typography component='span' color={pathDirect === item?.href ? '#fff' : 'inherit'}>
-              {item.title}</Typography>
-          </a>
+
+        <Link href={item.href} target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}>
+          <Typography color={pathDirect === item?.href ? '#fff' : 'inherit'}>
+            {item.title}</Typography>
         </Link>
-        {/* {item.title} */}
-      </MenuItem>
+      </MenuItem >
     );
   });
 };

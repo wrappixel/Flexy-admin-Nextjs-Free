@@ -28,12 +28,14 @@ const Sidebar = ({
           anchor="left"
           open
           variant="permanent"
-          PaperProps={{
-            sx: {
-              width: sidebarWidth,
-              boxSizing: "border-box",
-              top: '72px'
-            },
+          slotProps={{
+            paper: {
+              sx: {
+                width: sidebarWidth,
+                boxSizing: "border-box",
+                top: '72px'
+              },
+            }
           }}
         >
           {/* ------------------------------------------- */}
@@ -61,14 +63,15 @@ const Sidebar = ({
       open={isMobileSidebar}
       onClose={() => setIsMobileSidebar(!isMobileSidebar)}
       variant="temporary"
-      PaperProps={{
-        sx: {
-          width: sidebarWidth,
-          boxShadow: (theme) => theme.shadows[8],
-        },
+      slotProps={{
+        paper: {
+          sx: {
+            width: sidebarWidth,
+            boxShadow: (theme) => theme.shadows[8],
+          },
+        }
       }}
     >
-
       {/* ------------------------------------------- */}
       {/* Sidebar For Mobile */}
       {/* ------------------------------------------- */}

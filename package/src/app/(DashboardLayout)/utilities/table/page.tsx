@@ -1,7 +1,7 @@
-'use client';
-import { Grid2 as Grid, Paper } from "@mui/material";
-import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+'use client'
+import { Grid, Paper } from '@mui/material'
+import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard'
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
@@ -9,26 +9,25 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   height: 60,
   lineHeight: '60px',
-}));
+}))
 
-const darkTheme = createTheme({ palette: { mode: 'dark' } });
-const lightTheme = createTheme({ palette: { mode: 'light' } });
+const darkTheme = createTheme({ palette: { mode: 'dark' } })
+const lightTheme = createTheme({ palette: { mode: 'light' } })
 
-
-import ProductPerfomance from "@/app/(DashboardLayout)/components/dashboard/ProductPerformance";
+import ProductPerfomance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance'
 
 const Tables = () => {
   return (
-    (<Grid container spacing={0}>
+    <Grid container spacing={0}>
       <Grid
         size={{
           xs: 12,
-          lg: 12
+          lg: 12,
         }}>
         <ProductPerfomance />
       </Grid>
-    </Grid>)
-  );
-};
+    </Grid>
+  )
+}
 
-export default Tables;
+export default Tables

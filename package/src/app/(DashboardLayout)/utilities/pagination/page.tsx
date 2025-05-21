@@ -1,7 +1,7 @@
-'use client';
-import { Grid2 as Grid, Pagination, Stack, Paper } from "@mui/material";
-import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+'use client'
+import { Grid, Pagination, Stack, Paper } from '@mui/material'
+import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard'
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
@@ -9,24 +9,24 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   height: 60,
   lineHeight: '60px',
-}));
+}))
 
-const darkTheme = createTheme({ palette: { mode: 'dark' } });
-const lightTheme = createTheme({ palette: { mode: 'light' } });
+const darkTheme = createTheme({ palette: { mode: 'dark' } })
+const lightTheme = createTheme({ palette: { mode: 'light' } })
 
 const Paginations = () => {
   return (
-    (<Grid container>
+    <Grid container>
       <Grid
         size={{
           xs: 12,
-          lg: 12
+          lg: 12,
         }}>
-        <BaseCard title="Paginations">
+        <BaseCard title='Paginations'>
           <Stack spacing={2}>
             <Pagination count={10} />
-            <Pagination count={10} color="primary" />
-            <Pagination count={10} color="secondary" />
+            <Pagination count={10} color='primary' />
+            <Pagination count={10} color='secondary' />
             <Pagination count={10} disabled />
           </Stack>
         </BaseCard>
@@ -34,48 +34,48 @@ const Paginations = () => {
       <Grid
         size={{
           xs: 12,
-          lg: 12
+          lg: 12,
         }}>
-        <BaseCard title="Outlined Paginations">
+        <BaseCard title='Outlined Paginations'>
           <Stack spacing={2}>
-            <Pagination count={10} variant="outlined" />
-            <Pagination count={10} variant="outlined" color="primary" />
-            <Pagination count={10} variant="outlined" color="secondary" />
-            <Pagination count={10} variant="outlined" disabled />
+            <Pagination count={10} variant='outlined' />
+            <Pagination count={10} variant='outlined' color='primary' />
+            <Pagination count={10} variant='outlined' color='secondary' />
+            <Pagination count={10} variant='outlined' disabled />
           </Stack>
         </BaseCard>
       </Grid>
       <Grid
         size={{
           xs: 12,
-          lg: 12
+          lg: 12,
         }}>
-        <BaseCard title="Squred Paginations">
+        <BaseCard title='Squred Paginations'>
           <Stack spacing={2}>
-            <Pagination count={10} shape="rounded" variant="outlined" />
+            <Pagination count={10} shape='rounded' variant='outlined' />
             <Pagination
               count={10}
-              shape="rounded"
-              variant="outlined"
-              color="primary"
+              shape='rounded'
+              variant='outlined'
+              color='primary'
             />
             <Pagination
               count={10}
-              shape="rounded"
-              variant="outlined"
-              color="secondary"
+              shape='rounded'
+              variant='outlined'
+              color='secondary'
             />
             <Pagination
               count={10}
-              shape="rounded"
-              variant="outlined"
+              shape='rounded'
+              variant='outlined'
               disabled
             />
           </Stack>
         </BaseCard>
       </Grid>
-    </Grid>)
-  );
-};
+    </Grid>
+  )
+}
 
-export default Paginations;
+export default Paginations

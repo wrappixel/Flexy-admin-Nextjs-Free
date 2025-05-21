@@ -40,8 +40,10 @@ const DailyActivity = () => {
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
-          MenuListProps={{
-            'aria-labelledby': 'basic-button',
+          slotProps={{
+            list: {
+              'aria-labelledby': 'basic-button',
+            }
           }}
         >
           <MenuItem onClick={handleClose}>Item 1</MenuItem>

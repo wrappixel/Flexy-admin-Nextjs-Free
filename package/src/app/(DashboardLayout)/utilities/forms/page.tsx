@@ -1,7 +1,7 @@
-'use client';
+'use client'
 import {
   Paper,
-  Grid2 as Grid,
+  Grid,
   Stack,
   TextField,
   Checkbox,
@@ -13,99 +13,105 @@ import {
   FormControl,
   Button,
 } from '@mui/material'
-import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard'
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles'
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
   textAlign: 'center',
   color: theme.palette.text.secondary,
   height: 60,
   lineHeight: '60px',
-}));
+}))
 
-const darkTheme = createTheme({ palette: { mode: 'dark' } });
-const lightTheme = createTheme({ palette: { mode: 'light' } });
+const darkTheme = createTheme({ palette: { mode: 'dark' } })
+const lightTheme = createTheme({ palette: { mode: 'light' } })
 
 const Forms = () => {
   return (
-    (<Grid container>
+    <Grid container>
       <Grid
         size={{
           xs: 12,
-          lg: 12
+          lg: 12,
         }}>
-        <BaseCard title="Form Layout">
+        <BaseCard title='Form Layout'>
           <>
             <Stack spacing={3}>
               <TextField
-                id="name-basic"
-                label="Name"
-                variant="outlined"
-                defaultValue="Nirav Joshi"
-                size='small'
-              />
-              <TextField id="email-basic" label="Email" variant="outlined" size='small' />
-              <TextField
-                id="pass-basic"
-                label="Password"
-                type="password"
-                variant="outlined"
+                id='name-basic'
+                label='Name'
+                variant='outlined'
+                defaultValue='Nirav Joshi'
                 size='small'
               />
               <TextField
-                id="outlined-multiline-static"
-                label="Text Area"
+                id='email-basic'
+                label='Email'
+                variant='outlined'
+                size='small'
+              />
+              <TextField
+                id='pass-basic'
+                label='Password'
+                type='password'
+                variant='outlined'
+                size='small'
+              />
+              <TextField
+                id='outlined-multiline-static'
+                label='Text Area'
                 multiline
                 rows={4}
-                defaultValue="Default Value"
+                defaultValue='Default Value'
                 size='small'
               />
               <TextField
                 error
-                id="er-basic"
-                label="Error"
-                defaultValue="ad1avi"
-                variant="outlined"
+                id='er-basic'
+                label='Error'
+                defaultValue='ad1avi'
+                variant='outlined'
                 size='small'
               />
               <FormGroup>
                 <FormControlLabel
                   control={<Checkbox defaultChecked />}
-                  label="Terms & Condition"
+                  label='Terms & Condition'
                 />
                 <FormControlLabel
                   disabled
                   control={<Checkbox />}
-                  label="Disabled"
+                  label='Disabled'
                 />
               </FormGroup>
               <FormControl>
-                <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+                <FormLabel id='demo-radio-buttons-group-label'>
+                  Gender
+                </FormLabel>
                 <RadioGroup
-                  aria-labelledby="demo-radio-buttons-group-label"
-                  defaultValue="female"
-                  name="radio-buttons-group"
-                >
+                  aria-labelledby='demo-radio-buttons-group-label'
+                  defaultValue='female'
+                  name='radio-buttons-group'>
                   <FormControlLabel
-                    value="female"
+                    value='female'
                     control={<Radio />}
-                    label="Female"
+                    label='Female'
                   />
                   <FormControlLabel
-                    value="male"
+                    value='male'
                     control={<Radio />}
-                    label="Male"
+                    label='Male'
                   />
                   <FormControlLabel
-                    value="other"
+                    value='other'
                     control={<Radio />}
-                    label="Other"
+                    label='Other'
                   />
                 </RadioGroup>
               </FormControl>
             </Stack>
             <br />
-            <Button color="primary" variant="contained">
+            <Button color='primary' variant='contained'>
               Submit
             </Button>
           </>
@@ -114,29 +120,27 @@ const Forms = () => {
       <Grid
         size={{
           xs: 12,
-          lg: 12
+          lg: 12,
         }}>
-        <BaseCard title="Form Design Type">
-          <Stack spacing={3} direction="row">
+        <BaseCard title='Form Design Type'>
+          <Stack spacing={3} direction='row'>
             <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-
+              id='outlined-basic'
+              label='Outlined'
+              variant='outlined'
             />
 
-            <TextField id="filled-basic" label="Filled" variant="filled" />
+            <TextField id='filled-basic' label='Filled' variant='filled' />
             <TextField
-              id="standard-basic"
-              label="Standard"
-              variant="standard"
-
+              id='standard-basic'
+              label='Standard'
+              variant='standard'
             />
           </Stack>
         </BaseCard>
       </Grid>
-    </Grid>)
-  );
-};
+    </Grid>
+  )
+}
 
-export default Forms;
+export default Forms
