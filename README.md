@@ -1,287 +1,136 @@
-<p align="center">
-   <a href="https://www.wrappixel.com/" target="_blank">
-      <img src="https://adminmart.github.io/template_api/images/brand-logo/WrapPixel-Logo.svg" alt="flexy-image" width="100px" height="100px">
-   </a>
-</p>
+<a href="https://wrappixel.com/" target="_blank">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://wrappixel.com/images/logo/white-logo.svg">
+    <img src="https://wrappixel.com/images/logo/dark-logo.svg" alt="WrapPixel" width="180">
+  </picture>
+</a>
+
+# Flexy – Free Next.js Admin Dashboard Template with Material UI
+
+Free, open-source **Next.js admin dashboard template** by [WrapPixel](https://wrappixel.com/), built with **Next.js 15, React 19, Material UI (MUI) 7 and TypeScript**. A clean, responsive **Next.js MUI admin template** for dashboards, CRMs and SaaS back-ends.
+
+**[Live Preview](https://flexy-admin-nextjs-free.vercel.app/)** · **[Documentation](https://wrappixel.github.io/free-documentation-wp/nextjs/flexy/index.html)** · **[Spike – the newer version](https://wrappixel.com/templates/spike-next-js-free-admin-template)**
 
 
 
-<h1 align="center">
-   <a href="https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/?ref=376" target="_blank" align="center">
-       Flexy Next Js Free Admin Template
-   </a>
-</h1>
-
-<p align="center">Download most useful and comprehensive 🚀 Free NextJs admin template built for developers 🛠</p>
-
-
-[![Flexy Next Js Free Admin Template Demo Screenshot](https://www.wrappixel.com/wp-content/uploads/edd/2025/03/Flexy_Nextjs_Free_version.jpg)](https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/?ref=376)
-
-
-
+> [!NOTE]
+> **Flexy is no longer actively developed.** It still works and stays free on GitHub, but new features and updates now go into **[Spike Next.js](https://wrappixel.com/templates/spike-next-js-free-admin-template)**, built on the same Next.js + MUI stack. For new projects, we recommend starting with Spike.
 
 ## 👋 Introduction
 
-**Flexy** is a sleek, professional admin dashboard template built with **Next.js**, **Material UI (MUI)**, and **TypeScript**. Designed for performance, flexibility, and ease of customization, Flexy offers a powerful foundation for building modern, scalable web applications with minimal effort.
+**Flexy** is a free **Next.js admin template** built with **Material UI (MUI)** and **TypeScript**. It gives you a clean Material Design dashboard, reusable components and a flexible layout, so you can build admin panels, CRMs, SaaS dashboards and internal tools without starting from scratch.
 
-Whether you're creating admin panels, CRMs, SaaS dashboards, or internal tools, **Flexy** helps you move fast with a clean Material Design aesthetic, reusable components, and a flexible layout system.
+It uses the **Next.js App Router**, **MUI 7** and **ApexCharts**, with a simple folder structure that's easy to customise.
 
-Powered by the modern web stack of **Next.js**, **MUI**, and **TypeScript**, Flexy delivers fast performance, strong typing, and a smooth developer experience—so you can focus on building features, not boilerplate.
+## 🔑 Features
 
+- **Next.js 15 App Router** with React 19 and TypeScript
+- **Material UI (MUI) 7** components and theming
+- **ApexCharts** dashboard charts
+- **Fully responsive** layout for desktop, tablet and mobile
+- **Tabler Icons** for React
+- **Clean, modular code** with a simple theme setup
 
+## 📄 Pages included
 
+| Section | Pages |
+|---|---|
+| Dashboard | Modern dashboard |
+| UI components | Alerts, Autocomplete, Buttons, Checkbox, Radio, Slider, Switch, Forms, Images, Pagination, Table |
+| Authentication | Login, Register |
+| Other | Icons, Sample page |
 
+## 🛠️ Tech stack
 
-### 🔑 Key Features
+| Tool | Purpose |
+|---|---|
+| [Next.js 15](https://nextjs.org/) | React framework with App Router |
+| [React 19](https://react.dev/) | UI library |
+| [Material UI (MUI) 7](https://mui.com/) | Component library and theming |
+| [TypeScript](https://www.typescriptlang.org/) | Type safety |
+| [ApexCharts](https://apexcharts.com/) | Charts and graphs |
+| [Emotion](https://emotion.sh/) | CSS-in-JS styling used by MUI |
+| [Tabler Icons](https://tabler.io/icons) | Icon set |
 
-- **Responsive Design**  
-  Delivers a seamless experience across desktops, tablets, and mobile devices with MUI's responsive grid system.
-
-- **Material UI Components**  
-  Built entirely with **MUI (Material UI)**—customizable, accessible components that follow Google's Material Design guidelines.
-
-- **Pre-designed Pages**  
-  Comes with essential pages like dashboards, authentication screens, user profiles, error pages, and more to help you start fast.
-
-- **ApexCharts Integration**  
-  Interactive, customizable charts powered by **ApexCharts** for clear and effective data visualization.
-
-- **Optimized for Performance**  
-  Lightning-fast page loads, image optimization, and best practices built in using Next.js features like dynamic imports and SSR/SSG.
-
-- **Developer Friendly**  
-  Clean folder structure, modular codebase, and simple theme customization make it easy to build and scale.
-
-
----
-
-
-
-
-## 🛠️ Notable Libraries and Tools
-
-| **Library / Tool**    | **Description**                                                                 |
-|-----------------------|---------------------------------------------------------------------------------|
-| **Next.js**           | A powerful React framework for building server-rendered and statically generated web applications with routing, SSR, and API routes. |
-| **Material UI (MUI)** | A comprehensive UI component library based on Google's Material Design system, providing responsive, accessible, and highly customizable components. |
-| **ApexCharts**        | A modern charting library used to create interactive and customizable charts, ideal for visualizing dashboard data. |
-| **Emotion**           | A performant and flexible CSS-in-JS library used by MUI for styling components with dynamic and scoped styles. |
-| **MUI Icons**         | A collection of Material Design icons used throughout the dashboard for consistent, scalable UI elements. |
-
-
-
-
----
-
-## 💾 Installation Guide
-
-Welcome to the **Flexy Next Js Free Admin Template**! This guide will walk you through the installation and setup process, so you can get started with building your custom admin dashboard in no time.
-
-### 📝 Steps to Install
-
-#### 1. **Clone the Repository**
-
-The easiest way to get started is by cloning the repository or download the zip file. You can do this with the following command:
+## 💾 Getting started
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/wrappixel/Flexy-admin-Nextjs-Free.git
-```
+cd Flexy-admin-Nextjs-Free/package
 
-#### 2. **Install Dependencies**
-
-Install the relative Dependencies of the template. You can do this with the following command:
-
-```bash
+# 2. Install dependencies
 npm install
-```
 
-#### 3. **Start the Development Server**
-
-Once the dependencies are installed, you can start a local development server to preview the template: 
-
-```bash
+# 3. Start the development server
 npm run dev
+
+# 4. Build for production
+npm run build
 ```
 
----
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📝 Documentation
+Full guide: [Flexy documentation](https://wrappixel.github.io/free-documentation-wp/nextjs/flexy/index.html).
 
-Welcome to the **Flexy Next Js Free Admin Template** documentation! Whether you're just getting started or looking to explore advanced features, this guide will help you set up and customize your project with ease.
+## 🚀 Upgrade to Spike – the newer Next.js MUI admin
 
-👉 **[Click here to read the full documentation](https://wrappixel.github.io/free-documentation-wp/nextjs/flexy/index.html?ref=376)**
+**Spike** is the successor to Flexy, built on the same Next.js + Material UI stack, with a fresher design and ongoing updates.
 
+| | Spike Free | Spike Pro |
+|---|---|---|
+| Preview | [![Spike free Next.js admin template](https://images.wrappixel.com/templates/free/spike/Spike-Nextjs-Free.webp)](https://wrappixel.com/templates/spike-next-js-free-admin-template) | [![Spike Pro Next.js admin dashboard](https://images.wrappixel.com/templates/pro/spike/Spike_Paid_version_nextjs.webp)](https://wrappixel.com/templates/spike-nextjs-admin-template) |
+| Get it | [Download free](https://wrappixel.com/templates/spike-next-js-free-admin-template) | [View Spike Pro](https://wrappixel.com/templates/spike-nextjs-admin-template) |
+| Pages & components | Essential pages | Many dashboards, apps and pages |
+| Themes & dark mode | Default theme | Multiple themes, color skins and dark mode |
+| Support | Community | Priority support |
 
----
+Want every WrapPixel template? Get the [All Access Pass](https://wrappixel.com/all-access-pass).
 
+## 🔗 More templates by WrapPixel
 
-## 💎 Pro Version
+- [Next.js templates](https://wrappixel.com/nextjs-templates)
+- [Material UI (MUI) templates](https://wrappixel.com/mui-templates)
+- [React templates](https://wrappixel.com/react-templates)
+- [Admin dashboard templates](https://wrappixel.com/admin-dashboard-templates)
+- [Free admin templates](https://wrappixel.com/free-templates)
+- [Angular templates](https://wrappixel.com/angular-templates)
+- [Vue templates](https://wrappixel.com/vue-templates)
+- [Nuxt templates](https://wrappixel.com/nuxt-templates)
+- [Vuetify templates](https://wrappixel.com/vuetify-templates)
+- [Bootstrap templates](https://wrappixel.com/bootstrap-templates)
+- [Tailwind CSS templates](https://wrappixel.com/tailwind-templates)
+- [Framer templates](https://wrappixel.com/framer-templates)
 
-The Pro Version of the **Flexy NextJs Dashboard** comes packed with essential features—ideal for personal projects, prototypes, or small-scale applications. When you're ready to level up, the Pro Version unlocks a powerful suite of extras, including multiple theme options, advanced UI widgets, real-time notifications, priority support, and a host of other premium tools designed to supercharge your development workflow.
+## 🤝 Contributing
 
-<div style="display: flex; gap: 10px; align-items: center;">
-  <a href="https://flexy-next-js-dashboard.vercel.app/?ref=376" target="_blank">
-    <img src="https://img.shields.io/badge/Try_the_Demo-Click_Here-blue" alt="Try the Demo">
-  </a>
-  <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376" target="_blank">
-    <img src="https://img.shields.io/badge/Download_Now-Click_Here-green" alt="Download Now">
-  </a>
-</div>
+Bug fixes and improvements are welcome.
 
-[![Flexy Next Js Free Admin Template Demo Screenshot](https://www.wrappixel.com/wp-content/uploads/edd/2025/03/Flexy-Nextjs_blue.jpg)](https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376)
-
-
-
----
-
-
-## ⚖️ Free vs Pro Version Comparison
-
-The **Free Version** of the **Flexy NextJs Dashboard** provides a solid set of features, perfect for personal projects or small applications. However, for businesses or developers looking to unlock more advanced functionality, the **Pro Version** offers exciting features like **multiple themes**, **advanced widgets**, **real-time notifications**, **priority support**, and much more. 
-
-
-#### Check out the comparison below to see the key differences between the two versions:
-
-| **Feature**                      | **Free Version**                       | **Pro Version**                                      |
-|-----------------------------------|----------------------------------------|-----------------------------------------------------|
-| **Demo**                          | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://flexy-admin-nextjs-free.vercel.app/?ref=376)                               | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://flexy-next-js-dashboard.vercel.app/?ref=376)                                              |
-| **Download**                      | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://www.wrappixel.com/templates/flexy-next-js-free-admin-template/?ref=376)                                | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376)                                          |
-| **Responsive Design**             | ✅ Yes                                 | ✅ Yes                                              |
-| **Pre-designed Pages**            | ✅ Basic Pages                         | ✅ Advanced Pages (more layouts & options)           |
-| **Widgets**                       | ✅ Basic Widgets                       | ✅ Advanced Widgets (e.g., weather, charts, maps)    |
-| **Themes**                        | ✅ Default Theme                | ✅ Multiple Themes, Custom Color Skins, and Dark Modes |
-| **Support**                       | ✅ Community Support                   | ✅ Priority Support with Direct Contact             |
-| **Additional Components**         | ❌ Limited                             | ✅ Additional Components (Forms, Buttons, More UI Elements) |
-| **Advanced Data Visualization**   | ❌ Basic Charts                        | ✅ Advanced Data Visualizations (graphs, complex charts) |
-| **Multi-Language Support**        | ❌ Not available                       | ✅ Built-in support for multiple languages          |
-| **User Permissions & Roles**      | ❌ No                                  | ✅ User roles and permissions management            |
-| **Real-time Notifications**       | ❌ Not available                       | ✅ Real-time notifications for alerts & updates      |
-| **Advanced Analytics & Reporting**| ❌ Basic reports                       | ✅ Advanced analytics with custom reports and filters|
-
-
----
-
-## 🗂️ Other versions
-
-<table>
-   <thead>
-      <tr>
-         <th> 
-            <span style="font-size: 16px;">All Access Pass</span>
-         </th>
-         <th> 
-            <img src="https://skillicons.dev/icons?i=bootstrap" height="20" alt="Bootstrap 5 templates" style="margin-right: 8px;">
-            <span style="font-size: 16px;">Bootstrap</span>
-         </th>
-         <th> 
-            <img src="https://skillicons.dev/icons?i=react" height="20" alt="React templates" style="margin-right: 8px;">
-            <span style="font-size: 16px;">React</span>
-         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>
-            <a href="https://www.wrappixel.com/all-access-pass/?ref=376" width="150px">
-             <img src="https://www.wrappixel.com/wp-content/uploads/2025/04/all-access-pass-category-banner-1.png" alt="all-access-pass-category-admin-template" style="max-width:140px;">
-            </a>
-         </td>
-         <td>
-            <a href="https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-bootstrap-admin-wpn.jpg" alt="flexy-bootstrap-admin-template" style="max-width:140px;">
-            </a>
-         </td>
-         <td>
-            <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2025/02/Flexy-reactjs.jpg" alt="flexy-react-admin-template" style="max-width:140px;">
-            </a>
-         </td>
-      </tr>
-   </tbody>
-   <thead>   
-      <tr>
-         <th>
-            <img src="https://skillicons.dev/icons?i=angular" height="20" alt="Angular templates" style="margin-right: 8px;">
-            <span>Angular</span>
-         </th>
-         <th>
-            <img src="https://skillicons.dev/icons?i=vue" height="20" alt="Vue templates" style="margin-right: 8px;">
-            <span>Vue</span>
-         </th>
-         <th>
-            <img src="https://skillicons.dev/icons?i=nuxt" height="20" alt="Nuxt templates" style="margin-right: 8px;">
-            <span>Nuxt</span>
-         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>
-           <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376" width="150px">
-             <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-angular-material-admin-wpn.jpg" alt="flexy-angular-admin-template" style="max-width:140px;">
-           </a>
-         </td>
-         <td>
-           <a href="https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=376" width="150px">
-             <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-vuetify-vuejs-admin-wpn.jpg" alt="flexy-vue-admin-template" style="max-width:150px;">
-           </a>
-         </td>
-         <td>
-            <a href="https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/11/Flexy_Nuxtjs_preview.jpg" alt="flexy-nuxt-admin-template" style="max-width:150px;">
-            </a>
-         </td> 
-      </tr>
-   </tbody>
-</table>
-
----
-
-
-##  🤝  Contributing
-
-We welcome contributions from the community to help improve the **Flexy Next Js Free Admin Template**. Whether it’s fixing bugs, adding new features, improving documentation, or sharing ideas — your input is appreciated!
-
-### 🛠️ How to Contribute
-
-Follow these simple steps to start contributing:
-
-1. **Fork the Repository**  
-   Click the **Fork** button on the top-right corner of this repo to create your own copy.
-
-2. **Clone Your Fork**  
-   Use the command below to clone your forked repository:
+1. **Fork** this repository using the **Fork** button at the top right.
+2. **Clone your fork:**
    ```bash
-   git clone https://github.com/wrappixel/Flexy-admin-Nextjs-Free.git
-
-3. **Create a New Branch**  
-   Create a new branch to work on your feature or fix. This keeps your changes separate from the main branch:
+   git clone https://github.com/<your-username>/Flexy-admin-Nextjs-Free.git
+   ```
+3. **Create a branch:**
    ```bash
-   git checkout -b feature/your-feature-name
-
-4. **Commit and Push Changes**  
-   After making your changes, commit them with a meaningful message and push your branch to your fork:
+   git checkout -b fix/your-change
+   ```
+4. **Commit and push**, then open a pull request:
    ```bash
-   git commit -am "Add: Description of changes made"
-   git push origin feature/your-feature-name
+   git commit -am "Fix: short description"
+   git push origin fix/your-change
+   ```
 
+## 📜 License
+
+Free for personal and commercial projects. See the [WrapPixel license](https://wrappixel.com/license) for details.
+
+## 🌐 Support & updates
+
+Found a bug or have a question? [Open an issue](https://github.com/wrappixel/Flexy-admin-Nextjs-Free/issues) or contact [WrapPixel support](https://wrappixel.com/support).
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wrappixel) [![X](https://img.shields.io/badge/twitter-x?style=for-the-badge&logo=x&logoColor=white&color=%230f1419)](https://twitter.com/wrappixel) [![Facebook](https://img.shields.io/badge/facebook-logo?style=for-the-badge&logo=facebook&logoColor=white&color=%230866ff)](https://www.facebook.com/wrappixel) [![Instagram](https://img.shields.io/badge/instagram-logo?style=for-the-badge&logo=instagram&logoColor=white&color=%23F35369)](https://www.instagram.com/wrappixel) [![YouTube](https://img.shields.io/badge/youtube-logo?style=for-the-badge&logo=youtube&logoColor=white&color=%23cc0000)](https://www.youtube.com/@wrappixel) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/wrappixel)
 
 ---
 
-## 🧭 Useful Links
-- <p><a href="https://www.wrappixel.com/templates/category/admin-dashboard-templates/?ref=376">Admin Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/bootstrap-templates/?ref=376">Bootstrap Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/angular-templates/?ref=376">Angular Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/react-templates/?ref=376">React Template</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/framer-templates/?ref=376">Framer Templates</a> from Wrappixel</p>
--  <p><a href="https://www.wrappixel.com/templates/category/mui-templates/?ref=376">Material UI Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/vuetify-templates/?ref=376">Vuetify Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/nextjs-templates/?ref=376">NextJs Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/nuxt-templates/?ref=376">Nuxt Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/tailwind-dashboard/?ref=376">Tailwind Templates</a> from Wrappixel</p>
-
----
-
-## 🌐 We are social
-
-[![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wrappixel)  [![twitter](https://img.shields.io/badge/twitter-x?style=for-the-badge&logo=x&logoColor=white&color=%230f1419)](https://twitter.com/wrappixel)  [![facebook](https://img.shields.io/badge/facebook-logo?style=for-the-badge&logo=facebook&logoColor=white&color=%230866ff)](https://www.facebook.com/wrappixel)  [![instagram](https://img.shields.io/badge/instagram-logo?style=for-the-badge&logo=instagram&logoColor=white&color=%23F35369)](https://www.instagram.com/wrappixel)  [![youtube](https://img.shields.io/badge/youtube-logo?style=for-the-badge&logo=youtube&logoColor=white&color=%23cc0000)](https://www.youtube.com/@wrappixel)  [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/wrappixel)
+Made with ❤️ by [WrapPixel](https://wrappixel.com/). If Flexy helps your project, please give it a ⭐ so other developers can find it.
